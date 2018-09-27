@@ -16,7 +16,7 @@ fun main(args: Array<String>) {
             val op: Operator = getOperator(item) ?: exit(2, "Error!")
             val num1: Int = numbers.poll() ?: exit(3, "Error!")
             val num2: Int = numbers.poll() ?: exit(3, "Error!")
-            numbers.push(op.operation(num1, num2))
+            numbers.push(op(num1, num2))
         }
     }
     if (numbers.size != 1)
