@@ -56,7 +56,7 @@ int main(string[] args)
 		// Try getting an operator
 		try
 		{
-			int function(int, int) operation = operations[expression[0]];
+			opFun operation = operations[expression[0]];
 			expression = expression[1 .. expression.length];
 			auto secondOperand = numbers.back();
 			numbers.popBack();
